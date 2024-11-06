@@ -135,15 +135,6 @@ footer {
     order: 2;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #8C233F;
-    color: white;
-    margin-top: auto; /* Assure que le footer reste en bas */
-}
-
 /* Style de la page de contact */
 .contact-header {
     text-align: center;
@@ -247,4 +238,69 @@ main {
 /* Si l'image est à droite, le texte est à gauche */
 .image-right, .text-left {
     order: 2;
+}
+
+/* Ajustements pour les écrans mobiles */
+@media (max-width: 768px) {
+    /* Navigation : empiler les éléments */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left a, .icons-right a {
+        margin-right: 10px;  /* Réduire l'espacement */
+        margin-bottom: 10px; /* Ajouter de l'espacement vertical */
+    }
+
+    /* Icônes plus petites pour mobile */
+    .nav-left img, .icons-right img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Accueil : réduire la taille des éléments */
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+
+    .image-left img {
+        width: 100%;  /* Les images prennent 100% de la largeur sur mobile */
+    }
+
+    .text-right {
+        width: 100%;  /* Le texte occupe toute la largeur sur mobile */
+        padding-left: 0;  /* Éviter le padding sur petits écrans */
+    }
+
+    .text-right h1 {
+        font-size: 2em;
+    }
+
+    .text-right p {
+        font-size: 1em;
+    }
+
+    /* Intervention : rendre les images et le texte plus réactifs */
+    .intervention-content {
+        padding: 30px 10px;
+    }
+
+    .image-left, .image-right, .text-left, .text-right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Modification de l'alternance sur mobile : empiler les éléments */
+    .content-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer : ajuster le padding pour mobile */
+    footer {
+        padding: 15px;
+    }
 }
