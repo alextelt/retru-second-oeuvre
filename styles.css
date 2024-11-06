@@ -1,0 +1,250 @@
+/* Réinitialiser la marge et le padding par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cela permet de prendre en compte les bordures et les paddings dans la taille totale de l'élément */
+}
+
+/* Header avec navigation */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8C233F;
+    padding: 10px 20px;
+}
+
+/* Navigation à gauche */
+.nav-left {
+    display: flex;
+    align-items: center;  /* Centrer verticalement les éléments */
+}
+
+.nav-left a {
+    display: flex;
+    align-items: center;  /* Centrer l'icône et le texte */
+    margin-right: 15px;    /* Espacement entre les liens */
+    text-decoration: none; /* Enlever le soulignement */
+    color: inherit;        /* Assurer que la couleur du texte soit héritée */
+}
+
+.nav-left img, .icons-right img {
+    width: 32px;           /* Taille des icônes */
+    height: 32px;          /* Taille des icônes */
+    cursor: pointer;      /* Clic sur les icônes */
+}
+
+/* Icônes à droite (Facebook, téléphone, email) */
+.icons-right {
+    display: flex;
+    align-items: center;   /* Aligner verticalement les icônes */
+    justify-content: center; /* Centrer horizontalement les icônes */
+    margin-left: auto;      /* Placer les icônes à droite */
+}
+
+.icons-right a {
+    display: flex;
+    align-items: center;  /* Centrer l'icône et le texte */
+    margin-left: 15px;     /* Espacement entre les icônes */
+    text-decoration: none; /* Enlever le soulignement */
+    color: inherit;        /* Enlever la couleur bleue des liens */
+}
+
+/* Contenu principal de la page d'accueil */
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.image-left img {
+    width: 40%;
+    height: auto;
+}
+
+.text-right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.text-right h1 {
+    font-size: 2.5em;
+    color: #8C233F;
+}
+
+.text-right p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #592418;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8C233F;
+    color: white;
+}
+
+/* Contenu de la page d'interventions */
+.intervention-content {
+    padding: 50px 20px;
+}
+
+/* Structure alternée : image et texte */
+.content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Espacement entre chaque ligne */
+}
+
+.image-left, .image-right {
+    width: 45%;
+}
+
+.image-left img, .image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Un léger arrondi pour les images */
+}
+
+.text-left, .text-right {
+    width: 45%;
+    padding: 20px;
+}
+
+.text-left h2, .text-right h2 {
+    font-size: 2em;
+    color: #8C233F;
+}
+
+.text-left p, .text-right p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #592418;
+}
+
+/* Si l'image est à gauche, le texte est à droite */
+.image-left, .text-right {
+    order: 1;
+}
+
+/* Si l'image est à droite, le texte est à gauche */
+.image-right, .text-left {
+    order: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8C233F;
+    color: white;
+    margin-top: auto; /* Assure que le footer reste en bas */
+}
+
+/* Style de la page de contact */
+.contact-header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    color: #8C233F;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #592418;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.contact-link {
+    font-size: 1.2em;
+    color: #592418;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #8C233F;
+}
+
+/* Pour s'assurer que le footer est toujours au bas de la page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenu principal de la page */
+main {
+    flex: 1; /* Assure que le main prend tout l'espace disponible */
+    padding: 20px;
+}
+
+/* Espacement entre chaque alternance image/texte */
+.content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Espacement entre chaque ligne */
+}
+
+.image-left, .image-right {
+    width: 45%;
+}
+
+.image-left img, .image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Un léger arrondi pour les images */
+}
+
+.text-left, .text-right {
+    width: 45%;
+    padding: 20px;
+}
+
+.text-left h2, .text-right h2 {
+    font-size: 2em;
+    color: #8C233F;
+}
+
+.text-left p, .text-right p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #592418;
+}
+
+/* Si l'image est à gauche, le texte est à droite */
+.image-left, .text-right {
+    order: 1;
+}
+
+/* Si l'image est à droite, le texte est à gauche */
+.image-right, .text-left {
+    order: 2;
+}
