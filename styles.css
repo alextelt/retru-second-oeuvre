@@ -102,6 +102,9 @@ footer {
     padding: 20px;
     background-color: #ef455f; /* Couleur du footer */
     color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Réactivité - Responsive */
