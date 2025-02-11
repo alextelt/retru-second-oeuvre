@@ -1,3 +1,12 @@
+/* Variables CSS */
+:root {
+    --primary-color: #63b9a2;
+    --secondary-color: #562716;
+    --highlight-color: #8C233F;
+    --footer-color: #ef455f;
+    --text-color: #592418;
+}
+
 /* Réinitialisation des styles */
 * {
     margin: 0;
@@ -10,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #63b9a2;
+    background-color: var(--primary-color);
     padding: 10px 20px;
     flex-wrap: wrap; /* Permet l'affichage sur 2 lignes */
 }
@@ -26,7 +35,7 @@
     align-items: center;
     margin: 0 10px;
     text-decoration: none;
-    color: #562716; /* Couleur des icônes et du texte */
+    color: var(--secondary-color); /* Couleur des icônes et du texte */
     padding: 5px;
 }
 
@@ -78,21 +87,21 @@
 /* Texte */
 .text-right h1, .text-left h1 {
     font-size: 2.5em;
-    color: #8C233F;
+    color: var(--highlight-color);
     margin-bottom: 10px;
 }
 
 .text-right p, .text-left p {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #592418;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .signature {
     font-style: italic;
     font-size: 1.1em;
-    color: #8C233F;
+    color: var(--highlight-color);
     font-weight: bold;
 }
 
@@ -100,7 +109,7 @@
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ef455f; /* Couleur du footer */
+    background-color: var(--footer-color); /* Couleur du footer */
     color: white;
     position: fixed;
     bottom: 0;
@@ -181,7 +190,7 @@ footer {
 
 .contact-item a {
     text-decoration: none;
-    color: #562716;
+    color: var(--secondary-color);
     font-size: 1.2em;
 }
 
@@ -212,26 +221,26 @@ footer {
     flex: 1;
     text-align: left;
     font-size: 1.2em;
-    color: #562716;
+    color: var(--secondary-color);
 }
 
 .about-text h1 {
     font-size: 2.5em;
-    color: #8C233F;
+    color: var(--highlight-color);
     margin-bottom: 10px;
 }
 
 .about-text p {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #592418;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .signature {
     font-style: italic;
     font-size: 1.1em;
-    color: #8C233F;
+    color: var(--highlight-color);
     font-weight: bold;
 }
 
@@ -239,7 +248,7 @@ footer {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ef455f; /* Couleur du footer */
+    background-color: var(--footer-color); /* Couleur du footer */
     color: white;
 }
 
@@ -274,6 +283,7 @@ footer {
         font-size: 1em;
     }
 }
+
 /* Section intervention-content */
 .content-row {
     display: flex;
@@ -294,12 +304,12 @@ footer {
 .content-row .text-left {
     flex: 1;
     font-size: 1.2em;
-    color: #562716;
+    color: var(--secondary-color);
 }
 
 .content-row h2 {
     font-size: 2.5em;
-    color: #8C233F;
+    color: var(--highlight-color);
     margin-bottom: 20px;
 }
 
